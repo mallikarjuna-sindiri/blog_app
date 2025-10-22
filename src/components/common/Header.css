@@ -1,0 +1,81 @@
+.header {
+  background: var(--header-bg);
+  color: var(--text-primary);
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 4px 24px var(--shadow-color);
+  padding: 0.5rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.header img {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.link {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.user-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  margin-top: 2px;
+}
+
+.role {
+  background: var(--success-color);
+  color: #fff;
+  font-size: 0.8rem;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.signout-btn {
+  background: var(--danger-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 18px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.signout-btn:hover {
+  background: var(--button-hover);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Dark mode specific header adjustments */
+[data-theme="dark"] .header {
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .link {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .link:hover {
+  color: var(--blue);
+}
