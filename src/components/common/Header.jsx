@@ -36,7 +36,7 @@ const Header = () => {
         {/* Left: logo */}
         <div className="d-flex justify-content-center align-items-center">
           <Link to="/" className="brand">
-            <img src={logo} alt="Blog logo" width="56" className="ms-2" />
+            <img src={logo} alt="Blog logo" width="58" className="ms-2" />
           </Link>
         </div>
 
