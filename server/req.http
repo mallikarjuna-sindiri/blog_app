@@ -61,6 +61,19 @@ GET http://localhost:3000/user-api/articles
 GET http://localhost:3000/author-api/articles
 
 
+### User articles with search query
+GET http://localhost:3000/user-api/articles?search=javascript
+
+### Filter by category and author name
+GET http://localhost:3000/user-api/articles?category=programming&author=author1
+
+### Date range filter (YYYY-MM-DD) and newest first
+GET http://localhost:3000/user-api/articles?startDate=2025-01-01&endDate=2025-12-31&order=desc
+
+### Pagination
+GET http://localhost:3000/user-api/articles?page=2&limit=9
+
+
 
 ### edit article by id
 PUT http://localhost:3000/author-api/article/1738331074
