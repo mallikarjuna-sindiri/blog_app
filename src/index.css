@@ -270,6 +270,18 @@ body {
     color: white;
 }
 
+/* Improve readability of article header in dark mode */
+[data-theme="dark"] .author-block,
+[data-theme="dark"] .author-block .display-3,
+[data-theme="dark"] .author-block p,
+[data-theme="dark"] .author-block small {
+    color: #ffffff !important;
+}
+[data-theme="dark"] .author-block .text-secondary {
+    color: #ffffff !important;
+    opacity: 0.9;
+}
+
 .comments p {
     font-family: "Inter", sans-serif;
     color: var(--text-primary);

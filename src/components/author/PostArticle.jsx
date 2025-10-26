@@ -4,6 +4,7 @@ import axios from 'axios'
 import { AUTHOR_API } from '../../config/api'
 import { userAuthorContextObj } from '../../contexts/UserAuthorContext'
 import { useNavigate } from 'react-router-dom'
+import { CATEGORIES } from '../../constants/categories'
 
 function PostArticle() {
 
@@ -105,12 +106,10 @@ function PostArticle() {
                     style={{ backgroundColor: "var(--primary-bg)", border: "1px solid var(--border-color)", color: "var(--text-primary)" }}
                   >
                     <option value="" disabled>--categories--</option>
-                    <option value="programming">Programming</option>
-                    <option value="AI&ML">AI&ML</option>
-                    <option value="database">Database</option>
+                    {CATEGORIES.map((c) => (
+                      <option key={c} value={c}>{c}</option>
+                    ))}
                   </select>
-                  {/* title validation err msg */}
-
                 </div>
                 <div className="mb-4">
                   <label htmlFor="content" className="form-label" style={{ color: "var(--text-primary)" }}>
